@@ -17,12 +17,12 @@ public class MyListFragment extends ListFragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         ArrayList<Person> personList = MainController.getInstance().getPersonList();
-        this.adapter = new ArrayAdapter<Person>(getActivity(), android.R.layout.simple_list_item_1, personList);
+        adapter = new ArrayAdapter<Person>(getActivity(), android.R.layout.simple_list_item_1, personList);
         setListAdapter(adapter);
     }
 
     public void refreshList()
     {
-        this.adapter.notifyDataSetChanged();
+        adapter.notifyDataSetChanged();
     }
 }

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.consultants.week3daily1.fragment.MyDialogFragment;
@@ -55,6 +56,16 @@ public class MainActivity extends AppCompatActivity implements MyDialogFragment.
         getMenuInflater().inflate(R.menu.menu, menu);
         return true;
     }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.settings)
+        {
+            startActivity(new Intent(this, SettingsActivity.class));
+        }
+
+        return true;
+    }
+
 
     @Override
     public void onFragmentInteraction(Uri uri) {

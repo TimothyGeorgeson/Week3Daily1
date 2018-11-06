@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="brightness_preference"
+        android:title="Brightness Preference"
+        android:summary="Change Brightness Settings" />
+
+    <Preference
+        android:key="language_preference"
+        android:title="Language Preferences"
+        android:summary="Change Language Settings" />
+
+    <Preference
+        android:key="readability_preference"
+        android:title="Readability Preferences"
+        android:summary="Adjust font sizes for more readability" />
+
+</PreferenceScreen>
