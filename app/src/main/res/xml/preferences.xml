@@ -3,7 +3,7 @@
 
     <Preference
         android:key="brightness_preference"
-        android:title="Brightness Preference"
+        android:title="Brightness Preferences"
         android:summary="Change Brightness Settings" />
 
     <Preference
@@ -17,3 +17,4 @@
         android:summary="Adjust font sizes for more readability" />
 
 </PreferenceScreen>
+
