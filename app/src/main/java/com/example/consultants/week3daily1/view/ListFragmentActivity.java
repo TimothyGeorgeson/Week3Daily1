@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.consultants.week3daily1.fragment.MyListFragment;
 import com.example.consultants.week3daily1.R;
@@ -38,6 +39,7 @@ public class ListFragmentActivity extends AppCompatActivity {
         MyListFragment myListFragment = (MyListFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.fragmentHolder2);
         myListFragment.refreshList();
+        Toast.makeText(this, "Person Added!", Toast.LENGTH_SHORT).show();
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
