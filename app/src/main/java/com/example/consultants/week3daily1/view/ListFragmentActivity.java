@@ -5,10 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.example.consultants.week3daily1.MyListFragment;
+import com.example.consultants.week3daily1.fragment.MyListFragment;
 import com.example.consultants.week3daily1.R;
 import com.example.consultants.week3daily1.controller.MainController;
-import com.example.consultants.week3daily1.model.Person;
 
 public class ListFragmentActivity extends AppCompatActivity {
 

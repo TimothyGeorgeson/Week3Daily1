@@ -4,21 +4,27 @@ import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.View;
 
-import com.example.consultants.week3daily1.MyDialogFragment;
+import com.example.consultants.week3daily1.fragment.MyDialogFragment;
 import com.example.consultants.week3daily1.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity implements MyDialogFragment.OnFragmentInteractionListener {
-    
+
+
+    private Toolbar myToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        myToolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(myToolbar);
     }
 
     public void showDialog(View view) {
@@ -44,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements MyDialogFragment.
 
     }
 
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
     @Override
     public void onFragmentInteraction(Uri uri) {
 
@@ -52,4 +64,5 @@ public class MainActivity extends AppCompatActivity implements MyDialogFragment.
     public void toListFragView(View view) {
         startActivity(new Intent(getApplicationContext(), ListFragmentActivity.class));
     }
+
 }

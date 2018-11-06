@@ -1,4 +1,4 @@
-package com.example.consultants.week3daily1;
+package com.example.consultants.week3daily1.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
